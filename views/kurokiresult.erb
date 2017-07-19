@@ -1,0 +1,25 @@
+<% wa = @wariai.to_i * 0.01 %>
+
+<html>
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <h1>帯域制限値一覧</h1>
+  <div>
+    <div>
+      ネットワーク: <%=@network%>
+    </div>  
+    <div>
+      利用許容係数：<%=@wariai%>
+    </div>    
+  </div>
+
+  <div>
+    <p><%=@network.to_f / @wariai.to_f %> Mbps</p>
+    <p><%=@network.to_f / @wariai.to_f * 1024 %>Kbps</p>
+    
+    <p><%=@network.to_f / @wariai.to_f / 8 %>MBps</p>
+    <p><%=@network.to_f / @wariai.to_f * 1024 / 8 %>KBps</p>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang='ja'>
+<head>
+  <meta charset='utf-8'>
+  <title>グループ１</title>
+</head>
+<body>
+<p>
+郵便番号: <%= @zipcode %>
+</p>
+<p>
+都道府県: <%= @address1 %>
+</p>
+<p>
+市区町村: <%= @address2 %>
+</p>
+<p>
+町名: <%= @address3 %>
+</p>
+<p>
+<p>
+  <a href="/nakanishi">もう一度検索する</a>
+</p>
+<!-- エラーメッセージを表示-->
+<%= @message%>
+</p>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang='ja'>
+<head>
+  <meta charset='utf-8'>
+  <title>グループ１</title>
+</head>
+<body>
+  <h2>郵便番号ｰ>住所検索</h2>
+  <form method="get" action="/postcode">
+    <label for="postcode">
+      郵便番号：<input type="text" name="postcode"　id="postcode">
+    </label>
+    <input type="commit" name="submit" value="検索">
+  </form>
+</body>
+</html>
