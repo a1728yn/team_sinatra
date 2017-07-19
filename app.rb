@@ -8,6 +8,17 @@ get '/' do
   erb :index
 end
 
+
+get '/kuroki' do
+  erb :kuroki
+end
+
+post '/kurokiresult' do
+  @network = params[:network]
+  @wariai = params[:wariai]
+  erb :kurokiresult
+end
+
 get '/nakanishi' do
   erb :nakanishi
 end
@@ -67,4 +78,5 @@ def show(postcode)
       @message = "e.message"
     end
   end
+
 
